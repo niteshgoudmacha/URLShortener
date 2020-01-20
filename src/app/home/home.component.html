@@ -1,0 +1,20 @@
+<div class="container is-mobile" style="height: 60vh;">
+    <div class="field has-addons center">
+        <div class="control">
+            <input class="input is-rounded" type="text" placeholder="Paste Your Link" [(ngModel)]="longUrl" />
+        </div>
+        <div class="control">
+            <a class="button is-info is-rounded" (click)="generateLink()">
+              Get Link
+            </a>
+        </div>
+    </div>
+    <div class="is-rounded center" *ngIf="show">
+        <!-- <p>{{longUrl}}</p> -->
+        Short Link: 
+        <a href={{shortUrl}}  style="text-align: center;">{{shortUrl}}</a>
+    </div>
+</div>
+    
+        
+    
