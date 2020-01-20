@@ -14,7 +14,7 @@ import { HttpClient } from '@angular/common/http';
 export class DataService {
 
   constructor(private http: HttpClient /*dependency injection*/ ) { }
-  url = 'http://localhost:5000/api/url/shorten'
+  url = '/api/url/shorten'
   getURL(longUrl: any) {
     
     console.log('dataservices: ', longUrl);
