@@ -1,4 +1,4 @@
 module.exports = {
-    mongoURI: MONGO_URI,
-    baseUrl: BASE_URL
+    mongoURI: process.env.MONGO_URI,
+    baseUrl: process.env.BASE_URL
 }
